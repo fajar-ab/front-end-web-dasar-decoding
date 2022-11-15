@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pseudo-class Selector</title>
+    <style>
+
+        /* rule akan diterapkan pada sebuah tautan yang belum pernah dikunjungi */
+        a:link {
+            color: dodgerblue;
+        }
+
+        /* rule akan diterapkan pada sebuah tautan yang sudah pernah dikunjungi */
+        a:visited {
+            color: blueviolet;
+        }
+        
+        /* rule akan diterapkan pada sebuah tautan ketika diarahkan dengan kursor */
+        a:hover {
+            color: salmon;
+        }
+
+        /* rule akan diterapkan pada sebuah tautan ketika ditekan */
+        a:active {
+            color: orange;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <a href="https://google.com">Kunjugi Halaman Google</a>
+
+</body>
+</html>

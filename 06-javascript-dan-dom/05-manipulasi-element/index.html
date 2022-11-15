@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Manipulasi Atribut</title>
+  </head>
+  <body>
+    <figure>
+      <img
+        id="catImage"
+        src="https://i.ibb.co/9WT6LG6/two-three.jpg"
+        alt="three-cats"
+        width="600px"
+      />
+      <figcaption id="caption">Tiga Anak Kucing</figcaption>
+    </figure>
+    <script>
+      const gambar = document.getElementById("catImage");
+      gambar.setAttribute("src", "https://i.ibb.co/55VG7vL/three-cat.jpg");
+
+      // manipulasi elemet
+      const caption = document.querySelector("#caption");
+      caption.innerHTML = "<b>Tiga</b> Anak Kucing";
+      caption.style.fontStyle = "italic";
+    </script>
+  </body>
+</html>

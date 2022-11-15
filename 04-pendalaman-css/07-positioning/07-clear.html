@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Permasalahan Float</title>
+    <style>
+      .container {
+        width: 100%;
+        border: 3px dotted salmon;
+        border-radius: 5px;
+      }
+      img {
+        margin: 5px;
+        border-radius: 5px;
+        float: left;
+      }
+      .container::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .clear {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="dc.jpg" alt="decoding" width="150px" />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet est, ipsa
+        minus, architecto voluptatem dicta possimus eligendi quas quo distinctio
+        ad porro eaque excepturi esse mollitia at facilis ex suscipit?
+      </p>
+    </div>
+  </body>
+</html>

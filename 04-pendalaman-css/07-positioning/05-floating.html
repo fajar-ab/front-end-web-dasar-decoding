@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Float</title>
+    <style>
+      .container:nth-of-type(1) {
+        min-width: 500px;
+        max-width: 800px;
+        border: 1px solid blueviolet;
+        padding: 10px;
+        margin: auto;
+        margin-bottom: 12px;
+        overflow-y: auto;
+      }
+      img {
+        float: left;
+        margin-right: 10px;
+        margin-top: 16px;
+      }
+
+      .container:nth-of-type(2),
+      .container:nth-of-type(3) {
+        padding: 0;
+        height: 200px;
+        margin-top: 12px;
+        border: 1px solid blue;
+      }
+
+      .container:nth-of-type(2) > .kiri {
+        width: 30%;
+        background-color: salmon;
+        float: left;
+      }
+      .container:nth-of-type(2) > .kanan {
+        width: 70%;
+        background-color: blueviolet;
+        float: right;
+      }
+      .container:nth-of-type(2) > .kiri,
+      .container:nth-of-type(2) > .kanan {
+        height: inherit;
+        text-align: center;
+        line-height: 200px;
+        font-weight: bold;
+        color: white;
+      }
+
+      .container:nth-of-type(3) > .kiri {
+        background-color: aqua;
+      }
+      .container:nth-of-type(3) > .tengah {
+        background-color: palevioletred;
+      }
+      .container:nth-of-type(3) > .kanan {
+        background-color: aquamarine;
+      }
+
+      .container:nth-of-type(3) > .kiri,
+      .container:nth-of-type(3) > .tengah,
+      .container:nth-of-type(3) > .kanan {
+        float: left;
+        width: calc(100% / 3);
+        height: inherit;
+        text-align: center;
+        line-height: 200px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="dc.jpg" width="200px" alt="dicoding" />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+        asperiores commodi corporis doloribus eum ipsum obcaecati pariatur quam
+        quo, voluptatum? A, assumenda atque delectus dolore nam natus neque
+        quisquam repudiandae?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At deserunt
+        illum inventore numquam officia recusandae, sit! Ab asperiores delectus
+        dolor, eius est explicabo impedit ipsa ipsum itaque mollitia neque nihil
+        nisi officia praesentium sint! Accusantium libero obcaecati provident
+        qui? Error!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+        debitis dolorem eaque eius eos error eum ex facilis fuga ipsa iste iusto
+        mollitia nam natus necessitatibus praesentium quam qui quod, rerum sed
+        sequi sint voluptates? Atque enim, ex facere fugiat ipsum mollitia quos
+        sunt. At, autem commodi dolorum eos, est expedita, incidunt molestias
+        nobis nostrum officia porro reiciendis saepe voluptatum.
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="kiri">Konten Kiri</div>
+      <div class="kanan">Konten Kanan</div>
+    </div>
+
+    <div class="container">
+      <div class="kiri">Konten Kiri</div>
+      <div class="tengah">Konten Tengah</div>
+      <div class="kanan">Konten Kanan</div>
+    </div>
+  </body>
+</html>

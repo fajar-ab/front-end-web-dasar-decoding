@@ -1,0 +1,42 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+
+  /* * property lainnya */
+  width: 900px;
+  height: 250px;
+  background-color: aquamarine;
+  border: 2px solid rgb(127, 129, 129);
+  border-radius: 10px;
+  margin: auto;
+  padding: 20px;
+}
+
+.box {
+  font-size: 2em;
+  text-align: center;
+  line-height: 250px;
+
+  /* * property lainnya */
+  background-color: rgb(255, 255, 189);
+  border: 2px solid rgb(153, 153, 153);
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.fist {
+  flex-grow: 1;
+}
+
+.second {
+  flex-grow: 2;
+}
+
+.third {
+  flex-grow: 3;
+  
+}

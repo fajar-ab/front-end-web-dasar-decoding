@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Overflowing Content</title>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
+
+        .content {
+            width: 100%;
+            display: flex;
+            padding-top: 10px;
+        }
+
+        .item {
+            min-width: 200px;
+            flex-grow: 1;
+            margin: 5px;
+        }
+
+        .item div {
+            max-width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            margin-top: 2px;
+        }
+
+        .visible {overflow: visible}
+        .hidden {overflow: hidden}
+        .scroll {overflow: scroll}
+        .auto {overflow: auto}
+    </style>
+</head>
+<body>
+    
+    <div class="content">
+        <div class="item">
+            <b>div {overflow: visible}</b>
+            <div class="visible">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quas debitis excepturi possimus ipsum, sunt, doloribus rerum placeat esse officia ab aut nihil est. Expedita modi illo ut eos iusto?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa corrupti ab minima aliquid asperiores ipsum, molestias modi ducimus magnam blanditiis iusto corporis quisquam numquam nostrum debitis voluptatibus praesentium nobis voluptate.</p>
+            </div>
+        </div>
+        <div class="item">
+            <b>div {overflow: hidden}</b>
+            <div class="hidden">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quas debitis excepturi possimus ipsum, sunt, doloribus rerum placeat esse officia ab aut nihil est. Expedita modi illo ut eos iusto?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa corrupti ab minima aliquid asperiores ipsum, molestias modi ducimus magnam blanditiis iusto corporis quisquam numquam nostrum debitis voluptatibus praesentium nobis voluptate.</p>
+            </div>
+        </div>
+        <div class="item">
+            <b>div {overflow: scroll}</b>
+            <div class="scroll">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quas debitis excepturi possimus ipsum, sunt, doloribus rerum placeat esse officia ab aut nihil est. Expedita modi illo ut eos iusto?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa corrupti ab minima aliquid asperiores ipsum, molestias modi ducimus magnam blanditiis iusto corporis quisquam numquam nostrum debitis voluptatibus praesentium nobis voluptate.</p>
+            </div>
+        </div>
+        <div class="item">
+            <b>div {overflow: auto}</b>
+            <div class="auto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quas debitis excepturi possimus ipsum, sunt, doloribus rerum placeat esse officia ab aut nihil est. Expedita modi illo ut eos iusto?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa corrupti ab minima aliquid asperiores ipsum, molestias modi ducimus magnam blanditiis iusto corporis quisquam numquam nostrum debitis voluptatibus praesentium nobis voluptate.</p>
+            </div>
+        </div>
+        <div class="item">
+            <b>div {overflow: auto}</b>
+            <div class="auto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quas debitis excepturi possimus ipsum, sunt, doloribus rerum placeat esse officia ab aut nihil est. Expedita modi illo ut eos iusto?</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

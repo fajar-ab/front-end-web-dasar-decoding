@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Box Sizing</title>
+    <style>
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            border: 10px solid cornflowerblue;
+            padding: 20px;
+        }
+
+        .content {
+            box-sizing: content-box;
+        }
+
+        .box {
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="content"></div>
+    <p>Element yang menerapkan <code>box-sizing: content-box;</code> Ukuran box secara keseluruhan akan menjadi 260px tinggi, 260px lebar; </p>
+
+    <div class="box"></div>
+    <p>Element yang menerapkan <code>box-sizing: border-box;</code> Ukuran box akan tetap 200px lebar, 200px tinggi meskipun menerapkan padding dan border</p>
+
+</body>
+</html>
